@@ -1,0 +1,19 @@
+<div class="navbar navbar-inverse navbar-fixed-top desktop-hidden" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="<%= root_path %>">Track My Mixes</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav pull-right">
+        <%= nav_link 'Home', root_path %>
+        <%= nav_link 'Help', help_path %>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>

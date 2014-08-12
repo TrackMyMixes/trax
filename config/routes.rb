@@ -1,14 +1,9 @@
 Trax::Application.routes.draw do
-  get "main/home"
-  get "main/help"
-  get "main/about"
-  get "main/contact"
-  get "main/blog"
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  match '/help', to: 'main#help', via: 'get'
+  match '/about', to: 'main#about', via: 'get'
+  match '/contact', to: 'main#contact', via: 'get'
+  match '/blog', to: 'main#blog', via: 'get'
+  root 'main#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
