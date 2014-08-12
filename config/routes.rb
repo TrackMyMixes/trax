@@ -1,5 +1,5 @@
 Trax::Application.routes.draw do
-  get "users/new"
+  resources :users
   match '/signup',  to: 'users#new',            via: 'get'
   match '/help', to: 'main#help', via: 'get'
   match '/about', to: 'main#about', via: 'get'
